@@ -3,6 +3,8 @@
   --titles: #929b8d;
   --contents: #c8ccc6;
   --cards-color: #fcfcfc;
+  --sticker-icon-color:#68725F;
+  --sticker-color : #EDEDED;
 }
 
 * {
@@ -70,7 +72,10 @@
 #fourth-section {
   background-color: var(--titles);
 }
-
+#fifth-section {
+    padding-top: 10rem;
+  }
+  
 #img-design {
   width: 50%;
   margin: auto;
@@ -159,8 +164,34 @@ max-width: 20%;
 
 }
 
+.stickers{
+    display: flex;    
+    justify-content: space-evenly;
+    padding: .2rem
+}
+.sticker{
+    background-color: var(--sticker-color);
+    padding: 2rem;
+    border-radius: 25px;
+    max-width: 19%;
+}
+.sticker-icon{
+    display: flex;
+}
+.sticker-icon>div{
+    border-radius: 15px;
+    background-color: var(--cards-color);
+    padding: 1rem;
 
-
+}
+.sticker i{
+color: var(--sticker-icon-color);
+font-size: 2rem;
+}
+.title{
+    color: var(--titles);
+    font-size: 1.5rem;
+}
 
 @keyframes bounce {
   from {
