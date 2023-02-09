@@ -1,22 +1,250 @@
 :root {
-  --hero-color: white;
-  --titles: #929b8d;
-  --contents: #c8ccc6;
-  --cards-color: #fcfcfc;
-  --sticker-icon-color:#68725F;
-  --sticker-color : #EDEDED;
+    --hero-color: white;
+    --titles: #929b8d;
+    --contents: #c8ccc6;
+    --cards-color: #fcfcfc;
+    --sticker-icon-color: #68725f;
+    --sticker-color: #ededed;
 }
 
 * {
-  margin: 0;
-  padding: 0;
+    margin: 0;
+    padding: 0;
+    color: #4a4944;
+    font-family: sans-serif !important;
+}
+i,
+.far {
+    font-family: "Font Awesome 6 Free" !important;
+}
+.fa-star {
+    color: #d0d012;
 }
 
 @keyframes bounce {
-  from {
-    transform: translateY(0);
-  }
-  to {
-    transform: translateY(-20px);
-  }
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(-20px);
+    }
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    flex-wrap: wrap;
+    position: fixed;
+    width: 100%;
+    z-index: 99;
+    background-color: white;
+    box-sizing: border-box;
+    box-shadow: #000 -2px -3px 20px 0px;
+}
+
+nav .logo {
+    margin-left: 20px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    margin: 0;
+    padding: 0;
+    flex-wrap: wrap;
+}
+
+nav li {
+    display: inline-block;
+    margin: 0 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #000;
+}
+
+.demo {
+    background-color: #6874d4;
+    color: white;
+    border-radius: 5px;
+    border: none;
+}
+#demo-menu {
+    padding: 0.5rem 1rem;
+}
+#demo-banner {
+    padding: 3px 2rem;
+    text-transform: uppercase;
+}
+.container {
+    padding: 5rem 3rem;
+}
+#fist-section {
+    background-color: #eceefa;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.hero > * {
+    margin: 15px 0;
+}
+
+.container > .img {
+    flex: 0 0 60%;
+    max-width: 33%;
+    max-height: 33%;
+    object-fit: contain;
+    min-width: 250px;
+}
+.hero {
+    flex: 0 0 45%;
+}
+
+.banner {
+    text-align: center;
+    background-color: #fafaf1;
+    padding: 5rem 0;
+}
+#fourth-section {
+    justify-content: space-around;
+    align-items: center;
+}
+#fourth-section > div {
+    flex: 0 0 20%;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    text-align: center;
+}
+#fourth-section > div > img {
+    align-self: center;
+    justify-self: center;
+}
+.absolute {
+    position: relative;
+}
+.absolute > img {
+    position: absolute;
+    top: -25px;
+}
+#sixth-section {
+    background-color: #dad79d;
+    flex-direction: column;
+}
+#sixth-section > * {
+    padding: 2rem;
+}
+
+#fifth-section > div > h3 {
+    text-align: center;
+}
+.team > * {
+    margin: 1rem;
+    text-align: center;
+}
+#rendez-vous {
+    background-color: white;
+    color: #8c8c8c;
+    padding: 1rem 2rem;
+    border-radius: 17px;
+}
+.avatar-ctn {
+    display: flex;
+    flex: inherit !important;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.avatar {
+    min-width: 40px;
+    max-width: 100px;
+    padding: 25px;
+    padding-bottom: 0;
+}
+#seventh-section {
+    padding: 5rem 0;
+}
+.glide__slides {
+    padding: 1rem 3rem;
+}
+.card {
+    border-radius: 25px;
+    box-shadow: #000 1px 1px 20px 0px;
+    padding: 25px;
+    min-height: 100px;
+}
+
+.card > div {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.card > div > * {
+    margin: 10px 10px;
+}
+.glide__arrow--left {
+    right: 300px;
+}
+.glide__arrow--right {
+    right: 100px;
+}
+.glide__arrows > * {
+    position: absolute;
+    top: -50px;
+}
+.glide__arrows > button {
+    font-size: 3rem;
+    background: none;
+    color: inherit;
+    border: 3px solid black;
+    border-radius: 50%;
+    padding: 5px 12px;
+    cursor: pointer;
+    outline: inherit;
+    top: -80px;
+}
+#confiance {
+    left: 50px;
+}
+
+.form-ctn {
+    display: flex;
+}
+.form {
+    background-color: #4a4944;
+    padding: 2rem;
+    border-radius: 15px;
+    width: 25%;
+}
+.info {
+    color: white;
+    width: 25%;
+    padding: 3rem;
+    background-color: #6874d4;
+    position: relative;
+    margin-left: -25px;
+    border-radius: 15px;
+    top: 50px;
+}
+.info > * {
+    padding: 15px;
+}
+
+@media screen and (max-width: 750px) {
+    .glide__arrows > button {
+        display: none;
+    }
 }
