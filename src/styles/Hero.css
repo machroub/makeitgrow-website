@@ -1,0 +1,29 @@
+.hero-ctn {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 5rem 0;
+}
+.hero-left,
+.hero-right {
+    padding: 2rem;
+}
+.hero-left {
+    text-align: left;
+}
+.hero-right > img {
+    min-width: 20rem;
+    max-width: 30rem;
+    height: 100%;
+    object-fit: contain;
+}
+.demo-btn{
+    color: white;
+    background-color: #5b77ea;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 5px;
+    padding: .5rem 3rem;
+}

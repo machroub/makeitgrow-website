@@ -1,0 +1,91 @@
+.App {
+    text-align: center;
+}
+
+.App-logo {
+    height: 40vmin;
+    pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .App-logo {
+        animation: App-logo-spin infinite 20s linear;
+    }
+}
+
+.App-header {
+    background-color: #282c34;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+}
+
+.App-link {
+    color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+#first-section {
+    background-color: #eceefa;
+}
+.bloc-ctn {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 6rem;
+}
+.bloc-left {
+    width: 46%;
+    padding: 1rem;
+}
+.bloc-left > img {
+    width: 25rem;
+    height: 25rem;
+    object-fit: contain;
+}
+.bloc-right {
+    width: 50%;
+    text-align: left;
+}
+.bloc-right > h1 {
+    margin-bottom: 4rem;
+}
+
+#third-section {
+    background-color: goldenrod;
+    min-height: 200px;
+}
+#third-section > div {
+    padding: 3rem;
+}
+.step-ctn {
+    display: flex;
+    justify-content: space-evenly;
+}
+.step {
+    width: 25%;
+    margin: 1rem;
+}
+.team-ctn {
+    display: flex;
+    justify-content: space-evenly;
+}
+hr {
+    width: 50%;
+    margin: auto;
+    height: 2px;
+    background-color: black;
+    border-radius: 50px;
+}
