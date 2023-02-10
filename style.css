@@ -53,7 +53,7 @@ nav ul {
     display: flex;
     justify-content: flex-end;
     margin: 0;
-    padding: 30px;
+    padding: 0;
     flex-wrap: wrap;
 }
 
@@ -178,7 +178,7 @@ nav a:hover {
     padding: 5rem 0;
 }
 .glide__slides {
-    padding: 1rem 3rem;
+    padding: 1rem 3rem!important;
 }
 .card {
     border-radius: 25px;
