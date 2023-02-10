@@ -222,14 +222,18 @@ nav a:hover {
 
 .form-ctn {
     display: flex;
+    flex-wrap: wrap;
 }
 .form {
     background-color: #4a4944;
     padding: 2rem;
     border-radius: 15px;
     width: 25%;
+  margin: auto;
+
 }
 .info {
+  margin: auto;
     color: white;
     width: 25%;
     padding: 3rem;
