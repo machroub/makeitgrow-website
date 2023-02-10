@@ -59,7 +59,7 @@ nav ul {
 
 nav li {
     display: inline-block;
-    margin: 0 20px;
+    margin: 20px;
 }
 
 nav a {
@@ -178,7 +178,7 @@ nav a:hover {
     padding: 5rem 0;
 }
 .glide__slides {
-    padding: 1rem 3rem!important;
+    padding: 1rem 3rem !important;
 }
 .card {
     border-radius: 25px;
@@ -228,12 +228,12 @@ nav a:hover {
     background-color: #4a4944;
     padding: 2rem;
     border-radius: 15px;
-    width: 25%;
-  margin: auto;
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .info {
-  margin: auto;
+    margin: auto;
     color: white;
     width: 25%;
     padding: 3rem;
@@ -245,6 +245,14 @@ nav a:hover {
 }
 .info > * {
     padding: 15px;
+}
+
+form > div
+ {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 @media screen and (max-width: 750px) {
