@@ -30,6 +30,26 @@ i,
     }
 }
 
+.img-number-ctn {
+    position: relative;
+}
+
+.img-number {
+    width: 50%;
+    height: 50%;
+}
+
+.img-numero {
+    position: absolute;
+    top: 0;
+    right: -50px;
+    max-width: 100px;
+}
+
+
+#un{
+    height: 70px;
+}
 nav {
     display: flex;
     justify-content: space-between;
@@ -46,6 +66,11 @@ nav {
 
 nav .logo {
     margin-left: 20px;
+}
+.logo > img {
+    width: 80px;
+    height: 50px;
+    object-fit: contain;
 }
 
 nav ul {
@@ -101,6 +126,9 @@ nav a:hover {
 }
 .hero > * {
     margin: 15px 0;
+}
+.hero > img {
+    max-width: 200px;
 }
 
 .container > .img {
@@ -170,7 +198,7 @@ nav a:hover {
 }
 .avatar {
     min-width: 40px;
-    max-width: 100px;
+    max-width: 500px;
     padding: 25px;
     padding-bottom: 0;
 }
@@ -224,6 +252,7 @@ nav a:hover {
     display: flex;
     flex-wrap: wrap;
 }
+
 .form {
     background-color: #4a4944;
     padding: 2rem;
@@ -231,32 +260,101 @@ nav a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 2rem 15rem 2rem 4rem;
 }
+
+form > h3 {
+    color: red;
+    margin: 1rem;
+}
+
 .info {
     margin: auto;
     color: white;
-    width: 25%;
-    padding: 3rem;
+    padding: 5rem 3rem;
     background-color: #6874d4;
     position: relative;
-    margin-left: -25px;
+    margin-left: -75px;
     border-radius: 15px;
-    top: 50px;
 }
 .info > * {
     padding: 15px;
 }
 
-form > div
- {
+form > div {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-start;
     flex-direction: column;
 }
 
+.form-item {
+    height: 30px;
+    border-radius: 5px;
+    border: none;
+    margin: 1rem 0;
+}
+#message {
+    border-radius: 5px;
+}
+
+#form-submit {
+    padding: 1rem;
+    border-radius: 25px;
+}
+
+form .check-item {
+    padding: 2rem;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+.check-ctn {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.checker {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 12px;
+}
+.checker > * {
+    padding: 0.2rem;
+}
+.checker > span {
+    color: blue;
+}
+.actif {
+    border: solid 2px blue;
+}
 @media screen and (max-width: 750px) {
     .glide__arrows > button {
         display: none;
+    }
+}
+@media screen and (max-width: 1300px) {
+    .form-ctn {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .form,
+    .info {
+        margin: 1rem 0;
+    }
+    .form {
+        padding: 0;
+    }
+    .form > * {
+        max-width: 25%;
+    }
+    .info {
+        margin: 0;
     }
 }

@@ -25,7 +25,7 @@
         <header>
             <nav>
                 <div class="logo">
-                    <img src="./assets/img/logo-oguiz.webp" alt="" />
+                    <img src="./assets/img/logo.webp" alt="" />
                 </div>
                 <ul>
                     <li><a href="./business.html">A propos</a></li>
@@ -39,21 +39,21 @@
 
         <section class="container" id="fist-section">
             <div class="hero">
-                <img src="./assets/img/grille.webp" alt="" />
+                <img src="./assets/img/assets/ronds.webp" alt="" />
                 <h1>
                     LA SOLUTION DIGITALE POUR ACCROITRE ET GERER VOTRE ACTIVITÉ
                 </h1>
                 <p>
                     Votre loisir, notre service, la fusion d’une solution
-                    pérenne
+                    pérenne.
                 </p>
                 <button class="demo" id="demo-banner">demander une démo</button>
             </div>
-            <img class="img" src="./assets/img/bulles.webp" alt="Image" />
+            <img class="img" src="./assets/img/illu.webp" alt="Image" />
         </section>
 
         <section class="container" id="second-section">
-            <img class="img" src="./assets/img/finger.webp" alt="Image" />
+            <img class="img" src="./assets/img/image1.webp" alt="Image" />
             <div class="hero">
                 <h1>LA DIGITALISATION À VOTRE PORTÉE</h1>
                 <p>
@@ -96,14 +96,23 @@
                     annuaires afin d’être vu.
                 </p>
             </div>
-            <img class="img" src="./assets/img/cubes.webp" alt="Image" />
+            <img class="img" src="./assets/img/image2.webp" alt="Image" />
         </section>
 
         <hr />
 
         <section class="container" id="fourth-section">
             <div>
-                <img src="./assets/img/01.webp" alt="" />
+                <div class="img-number-ctn">
+                    <img
+                        class="img-number img-numero"
+                        src="./assets/img/01.webp"
+                        alt="" id="un" />
+                    <img
+                        class="img-number"
+                        src="./assets/img/trio1.webp"
+                        alt="" />
+                </div>
                 <h3>UN PARCOURS TOTALEMENT DIGITAL</h3>
                 <p>
                     Nos outils vous permettent d’offrir,une immersion totalement
@@ -117,7 +126,16 @@
             </div>
 
             <div>
-                <img src="./assets/img/02.webp" alt="" />
+                <div class="img-number-ctn">
+                    <img
+                        class="img-number img-numero"
+                        src="./assets/img/02.webp"
+                        alt="" />
+                    <img
+                        class="img-number"
+                        src="./assets/img/trio2.webp"
+                        alt="" />
+                </div>
                 <h3>UNE OFFRE PERSONNALISABLE</h3>
                 <p>
                     Nos experts vous accompagnent dans l’analyse de vos besoins.
@@ -135,7 +153,16 @@
             </div>
 
             <div>
-                <img src="./assets/img/03.webp" alt="" />
+                <div class="img-number-ctn">
+                    <img
+                        class="img-number img-numero"
+                        src="./assets/img/03.webp"
+                        alt="" />
+                    <img
+                        class="img-number"
+                        src="./assets/img/trio3.webp"
+                        alt="" />
+                </div>
                 <h3>UNE EQUIPE À VOTRE ECOUTE</h3>
                 <p>
                     Un outil de ticketing à été mis en place pour vous permettre
@@ -179,16 +206,8 @@
         <div class="avatar-ctn">
             <img
                 class="avatar"
-                src="./assets/img/julien.webp"
-                alt="avatar julien" />
-            <img
-                class="avatar"
-                src="./assets/img/mache.webp"
-                alt="avatar mach" />
-            <img
-                class="avatar"
-                src="./assets/img/micke.webp"
-                alt="avatar micke" />
+                src="./assets/img/personnages.webp"
+                alt="avatar equipe oguiz" />
         </div>
 
         <section class="container" id="sixth-section">
@@ -274,28 +293,93 @@
             <div class="form-ctn">
                 <div class="form">
                     <form action="" method="post">
+                        <h3>nous contacter</h3>
                         <div>
-                            <label for="email">Email*</label>
-                            <input type="text" name="email" />
+                            <input
+                                class="form-item"
+                                type="text"
+                                placeholder="nom"
+                                name="nom" />
                         </div>
                         <div>
-                            <label for="nom">Nom</label>
-                            <input type="text" name="nom" />
+                            <input
+                                class="form-item"
+                                type="text"
+                                placeholder="email"
+                                name="email" />
                         </div>
                         <div>
-                            <label for="message">Message</label>
                             <textarea
+                                id="message"
                                 name="message"
+                                placeholder="message"
                                 id="message"
                                 cols="30"
                                 rows="10"></textarea>
+
                             <div class="check-info">
-                                <input type="checkbox" name="demo" id="" />
-                                <input type="checkbox" name="contact" id="" />
-                                <input type="checkbox" name="info" id="" />
-                                <input type="checkbox" name="autre" id="" />
+                                <input
+                                    class="form-item"
+                                    type="radio"
+                                    value="demo"
+                                    name="check"
+                                    id="" />
+                                <input
+                                    class="form-item"
+                                    type="radio"
+                                    value="contact"
+                                    name="check"
+                                    id="" />
+                                <input
+                                    class="form-item"
+                                    type="radio"
+                                    value="info"
+                                    name="check"
+                                    id="" />
+                                <input
+                                    class="form-item"
+                                    type="radio"
+                                    value="autre"
+                                    name="check"
+                                    id="" />
+
+                                <div class="check-ctn">
+                                    <div
+                                        class="checker"
+                                        data-value="demo"
+                                        onclick="toogleActive(event)">
+                                        <i class="fa-solid fa-star"></i>
+                                        <span>démo</span>
+                                    </div>
+
+                                    <div
+                                        class="checker"
+                                        data-value="contact"
+                                        onclick="toogleActive(event)">
+                                        <i class="fa-solid fa-star"></i>
+                                        <span>contact</span>
+                                    </div>
+
+                                    <div
+                                        class="checker"
+                                        data-value="infos"
+                                        onclick="toogleActive(event)">
+                                        <i class="fa-solid fa-star"></i>
+                                        <span>infos</span>
+                                    </div>
+
+                                    <div
+                                        class="checker"
+                                        data-value="demo"
+                                        onclick="toogleActive(event)">
+                                        <i class="fa-solid fa-star"></i>
+                                        <span>autre</span>
+                                    </div>
+                                </div>
                             </div>
-                            <button type="submit">ENVOYER</button>
+                            <button class="demo" id="form-submit" type="submit">
+                                ENVOYER
+                            </button>
                         </div>
                     </form>
                 </div>
@@ -348,6 +432,19 @@
         // useDelay: "onload",
         reset: true,
     });
+
+    function toogleActive(event) {
+        var actif = document.getElementsByClassName("actif");
+        // transforme le noeud en tableau
+        oldActif = [...actif];
+        // faut il contraindre l'utilisateur à un seul choix ?
+        oldActif.forEach((element) => {
+            element.classList.remove("actif");
+        });
+        console.log(event.target.closest(".actif"));
+        actif = event.target.closest(".checker");
+        actif.classList.add("actif");
+    }
 </script>
 <script
     async
