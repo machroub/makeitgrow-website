@@ -434,14 +434,35 @@ form .check-item {
     margin: 0 4px !important;
 }
 
+.footer-ctn {
+    position: relative;
+}
+
 .footer-ctn > .footer-img > img {
     max-width: 100%;
 }
-.footer-list > ul {
+.footer-list {
     display: flex;
-    position: relative;
+    position: absolute;
+    bottom: 100px;
+    flex-direction: column;
 }
-.footer-list > ul > li {
+.footer-list .logo-footer-ctn {
+    position: relative;
+    top: 90px;
+    left: 2rem;
+}
+.footer-list img {
+    max-width: 100px;
+    max-height: 100px;
+    object-fit: contain;
+    mix-blend-mode: plus-lighter;
+}
+.footer-list ul {
+    display: flex;
+}
+.footer-list ul li {
+    color: white;
     list-style-type: none;
     margin: 0 2rem;
 }
