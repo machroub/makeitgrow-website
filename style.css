@@ -6,6 +6,9 @@
     --sticker-icon-color: #68725f;
     --sticker-color: #ededed;
 }
+html {
+    scroll-behavior: smooth;
+}
 
 * {
     margin: 0;
