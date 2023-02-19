@@ -463,11 +463,12 @@ form .check-item {
 }
 .footer-list ul {
     display: flex;
+    flex-wrap: wrap;
 }
 .footer-list ul li {
     color: white;
     list-style-type: none;
-    margin: 0 2rem;
+    padding: 0 16px;
 }
 
 @media screen and (max-width: 750px) {
