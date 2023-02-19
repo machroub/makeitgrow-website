@@ -83,13 +83,12 @@ nav ul {
 
 nav li {
     display: inline-block;
-    margin: 20px;
+    margin: 15px;
 }
 
 nav a {
     text-decoration: none;
     color: #333;
-    font-size: 18px;
     font-weight: bold;
 }
 
@@ -268,7 +267,7 @@ hr {
 #eight-section {
     text-align: center;
     width: 50%;
-    margin: auto;
+    margin: 7rem auto;
 }
 #eight-section > p,
 .avis-title,
@@ -304,10 +303,22 @@ hr {
     position: absolute;
     top: -50px;
 }
-.glide2 .glide__arrows > * {
+.glide2 .glide__arrows {
     position: relative;
-    top: 0px;
 }
+.glide2 .glide__arrows > * {
+    position: absolute;
+    top: 0;
+}
+
+.glide2 .glide__arrow--right {
+    right: -25%;
+}
+
+.glide2 .glide__arrows > .glide__arrow--left {
+    right: 120%;
+}
+
 .glide__arrows > button {
     font-size: 2rem;
     background: none;
@@ -423,8 +434,23 @@ form .check-item {
     margin: 0 4px !important;
 }
 
+.footer-ctn > .footer-img > img {
+    max-width: 100%;
+}
+.footer-list > ul {
+    display: flex;
+    position: relative;
+}
+.footer-list > ul > li {
+    list-style-type: none;
+    margin: 0 2rem;
+}
+
 @media screen and (max-width: 750px) {
     .glide__arrows > button {
+        display: none;
+    }
+    nav ul {
         display: none;
     }
 }
