@@ -46,8 +46,7 @@ i,
     max-width: 100px;
 }
 
-
-#un{
+#un {
     height: 70px;
 }
 nav {
@@ -108,8 +107,9 @@ nav a:hover {
     padding: 0.5rem 1rem;
 }
 #demo-banner {
-    padding: 3px 2rem;
+    padding: 10px 2rem;
     text-transform: uppercase;
+    cursor: pointer;
 }
 .container {
     padding: 5rem 3rem;
@@ -125,12 +125,34 @@ nav a:hover {
     justify-content: space-evenly;
 }
 .hero > * {
+    max-width: 470px;
     margin: 15px 0;
+}
+.hero p {
+    color: grey;
+}
+.hero > p:nth-child(3) {
+    max-width: 550px;
 }
 .hero > img {
     max-width: 200px;
 }
 
+#propals p {
+    max-width: 450px;
+    margin: 15px 0;
+    color: grey;
+}
+#propals > p:nth-child(3) {
+    max-width: 450px;
+}
+
+hr {
+    width: 50%;
+    margin: auto;
+    border: 2px solid grey;
+    border-radius: 15px;
+}
 .container > .img {
     flex: 0 0 60%;
     max-width: 33%;
@@ -144,8 +166,17 @@ nav a:hover {
 
 .banner {
     text-align: center;
-    background-color: #fafaf1;
+    background-color: #eceefa;
     padding: 5rem 0;
+}
+.banner > h2 {
+    color: #6874d4;
+    font-size: 35px;
+}
+.banner > p {
+    color: #6874d4;
+    font-size: 30px;
+    font-weight: 600;
 }
 #fourth-section {
     justify-content: space-around;
@@ -164,19 +195,33 @@ nav a:hover {
 }
 .absolute {
     position: relative;
+    z-index: 9999999999999999;
+}
+.absolute > .right {
+    right: 0;
+    z-index: 9999999999999999;
 }
 .absolute > img {
     position: absolute;
     top: -25px;
+    max-width: 250px;
 }
 #sixth-section {
-    background-color: #dad79d;
+    background-color: #6874d4;
     flex-direction: column;
 }
 #sixth-section > * {
+    color: whitesmoke;
     padding: 2rem;
 }
-
+#fifth-section {
+    padding-top: 2rem;
+    position: relative;
+    background-color: #eceefa;
+}
+#p-1 {
+    margin-bottom: 150px;
+}
 #fifth-section > div > h3 {
     text-align: center;
 }
@@ -184,17 +229,30 @@ nav a:hover {
     margin: 1rem;
     text-align: center;
 }
+.team > h3 {
+    font-size: 35px;
+}
+.team > p {
+    color: grey;
+    font-weight: 600;
+    max-width: 50%;
+    margin: 1rem auto;
+}
+
 #rendez-vous {
     background-color: white;
     color: #8c8c8c;
     padding: 1rem 2rem;
     border-radius: 17px;
+    text-decoration: none;
+    font-weight: 600;
 }
 .avatar-ctn {
     display: flex;
     flex: inherit !important;
     justify-content: space-around;
     flex-wrap: wrap;
+    background-color: #eceefa;
 }
 .avatar {
     min-width: 40px;
@@ -202,8 +260,21 @@ nav a:hover {
     padding: 25px;
     padding-bottom: 0;
 }
-#seventh-section {
+#seventh-section,
+#eight-section {
     padding: 5rem 0;
+    margin: 5rem 0;
+}
+#eight-section {
+    text-align: center;
+    width: 50%;
+    margin: auto;
+}
+#eight-section > p,
+.avis-title,
+.avis-body {
+    font-weight: 600;
+    color: grey;
 }
 .glide__slides {
     padding: 1rem 3rem !important;
@@ -233,13 +304,17 @@ nav a:hover {
     position: absolute;
     top: -50px;
 }
+.glide2 .glide__arrows > * {
+    position: relative;
+    top: 0px;
+}
 .glide__arrows > button {
-    font-size: 3rem;
+    font-size: 2rem;
     background: none;
     color: inherit;
     border: 3px solid black;
     border-radius: 50%;
-    padding: 5px 12px;
+    padding: 4px 9px;
     cursor: pointer;
     outline: inherit;
     top: -80px;
@@ -254,28 +329,29 @@ nav a:hover {
 }
 
 .form {
-    background-color: #4a4944;
-    padding: 2rem;
+    background-color: #eceefa;
     border-radius: 15px;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 2rem 15rem 2rem 4rem;
+    padding: 7rem 15rem 2rem 4rem;
 }
 
 form > h3 {
-    color: red;
-    margin: 1rem;
+    color: black;
+    margin-bottom: 3rem;
+    font-weight: 600;
+    font-size: 30px;
+    text-transform: uppercase;
 }
-
 .info {
-    margin: auto;
     color: white;
     padding: 5rem 3rem;
     background-color: #6874d4;
     position: relative;
-    margin-left: -75px;
+    margin-left: -150px;
     border-radius: 15px;
+    top: 150px;
 }
 .info > * {
     padding: 15px;
@@ -292,14 +368,18 @@ form > div {
     border-radius: 5px;
     border: none;
     margin: 1rem 0;
+    padding: 5px 15px;
 }
 #message {
-    border-radius: 5px;
+    height: 150px;
 }
 
 #form-submit {
     padding: 1rem;
     border-radius: 25px;
+}
+.d-none {
+    display: none;
 }
 
 form .check-item {
@@ -320,19 +400,29 @@ form .check-item {
     justify-content: center;
     align-items: center;
     background-color: white;
-    padding: 1rem;
     margin: 1rem;
     border-radius: 12px;
+    font-weight: 600;
+    box-shadow: 0px 0px 6px 0px;
+    min-width: 65px;
+    color: #6874d4;
+    padding: 0.3rem;
 }
 .checker > * {
+    color: inherit;
     padding: 0.2rem;
 }
-.checker > span {
-    color: blue;
+.checker > i {
+    font-size: 25px;
 }
 .actif {
-    border: solid 2px blue;
+    border: solid 4px #6874d4;
 }
+.glide__slide--active,
+.glide__slide--clone {
+    margin: 0 4px !important;
+}
+
 @media screen and (max-width: 750px) {
     .glide__arrows > button {
         display: none;
@@ -349,12 +439,9 @@ form .check-item {
         margin: 1rem 0;
     }
     .form {
-        padding: 0;
+        padding: 7rem 0;
     }
     .form > * {
-        max-width: 25%;
-    }
-    .info {
-        margin: 0;
+        max-width: 80%;
     }
 }
