@@ -13,6 +13,10 @@
             integrity="sha512-YQlbvfX5C6Ym6fTUSZ9GZpyB3F92hmQAZTO5YjciedwAaGRI9ccNs4iw2QTCJiSPheUQZomZKHQtuwbHkA9lgw=="
             crossorigin="anonymous"
             referrerpolicy="no-referrer" />
+        <link
+            href="https://unpkg.com/aos@2.3.1/dist/aos.css"
+            rel="stylesheet" />
+
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -37,9 +41,13 @@
             </nav>
         </header>
 
-        <section class="container" id="fist-section">
+        <section class="container" id="fist-section" data-aos="fade-up">
             <div class="hero">
-                <img src="./assets/img/assets/ronds.webp" alt="" />
+                <img
+                    id="rond"
+                    class="rond"
+                    src="./assets/img/assets/ronds.webp"
+                    alt="" />
                 <h1>
                     LA SOLUTION DIGITALE POUR ACCROITRE ET GERER VOTRE ACTIVITÉ
                 </h1>
@@ -52,7 +60,7 @@
             <img class="img" src="./assets/img/illu.webp" alt="Image" />
         </section>
 
-        <section class="container" id="second-section">
+        <section class="container" id="second-section" data-aos="fade-up">
             <img class="img" src="./assets/img/image1.webp" alt="Image" />
             <div class="hero">
                 <h1>LA DIGITALISATION À VOTRE PORTÉE</h1>
@@ -71,16 +79,16 @@
             </div>
         </section>
 
-        <div class="banner">
+        <div class="banner" data-aos="fade-up">
             <h2>NOS SERVICES</h2>
             <p>ce que nous vous proposons :</p>
         </div>
 
-        <div class="absolute">
+        <div class="absolute" data-aos="fade-up">
             <img class="right" src="./assets/img/ronds.webp" alt="" />
         </div>
 
-        <section id="third-section" class="container">
+        <section id="third-section" class="container" data-aos="fade-up">
             <div class="hero" id="propals">
                 <h1>LA DIGITALISATION À VOTRE PORTÉE</h1>
                 <p>Oguiz propulse votre visibilité sur plusieurs axes :</p>
@@ -106,7 +114,7 @@
 
         <hr />
 
-        <section class="container" id="fourth-section">
+        <section class="container" id="fourth-section" data-aos="fade-up">
             <div>
                 <div class="img-number-ctn">
                     <img
@@ -534,14 +542,23 @@
     </body>
 </html>
 <!-- <script src="node_modules/@glidejs/glide/dist/glide.min.js"></script> -->
-<script src="https://unpkg.com/scrollreveal"></script>
+<!-- <script src="https://unpkg.com/scrollreveal"></script> -->
 
+<script src="./index.js"></script>
 <script
     src="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.2.0/glide.min.js"
     integrity="sha512-IkLiryZhI6G4pnA3bBZzYCT9Ewk87U4DGEOz+TnRD3MrKqaUitt+ssHgn2X/sxoM7FxCP/ROUp6wcxjH/GcI5Q=="
     crossorigin="anonymous"
     referrerpolicy="no-referrer"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
+    AOS.init({
+        duration: 1200,
+        delay: 0,
+        mirror: true,
+        once: false,
+    });
+
     new Glide(".glide", {
         type: "carousel",
         gap: 60,
@@ -573,23 +590,20 @@
     }).mount();
 
     const element = document.querySelector(".info");
-    ScrollReveal({ reset: true }).reveal(".form-ctn");
-    ScrollReveal().reveal(".banner ", {
-        delay: 500,
-        // useDelay: "onload",
-        reset: true,
-    });
+    // ScrollReveal({ reset: true }).reveal(".form-ctn");
+    // ScrollReveal().reveal(".banner ", {
+    //     delay: 500,
+    //     reset: true,
+    // });
 
-    ScrollReveal().reveal(".container ", {
-        delay: 500,
-        // useDelay: "onload",
-        reset: true,
-    });
-    ScrollReveal().reveal(".avatar ", {
-        delay: 500,
-        // useDelay: "onload",
-        reset: true,
-    });
+    // ScrollReveal().reveal(".container ", {
+    //     delay: 500,
+    //     reset: true,
+    // });
+    // ScrollReveal().reveal(".avatar ", {
+    //     delay: 500,
+    //     reset: true,
+    // });
 
     function toogleActive(event) {
         var actif = document.getElementsByClassName("actif");

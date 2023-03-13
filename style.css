@@ -15,6 +15,7 @@ html {
     padding: 0;
     color: #4a4944;
     font-family: sans-serif !important;
+    box-sizing: border-box;
 }
 i,
 .far {
@@ -31,6 +32,17 @@ i,
     to {
         transform: translateY(-20px);
     }
+}
+
+.item {
+  width: 200px;
+  height: 200px;
+  margin: 50px auto;
+  padding-top: 75px;
+  background: #ccc;
+  text-align: center;
+  color: #FFF;
+  font-size: 3em;
 }
 
 .img-number-ctn {
